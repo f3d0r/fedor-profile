@@ -15,6 +15,7 @@ closeBtn.forEach(function (element, index) {
         if ($(element).get(0).id == "send_button") {
             var $form = $(".profile-card-form");
             $.post($form.attr("action"), $form.serialize()).then(function () {});
+            $(".message_text").val("");
         }
         card.classList.remove('active');
     });
