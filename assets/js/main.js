@@ -14,9 +14,7 @@ closeBtn.forEach(function (element, index) {
         e.preventDefault();
 
         var $form = $(".profile-card-form");
-        $.post($form.attr("action"), $form.serialize()).then(function () {
-            alert("Thank you!");
-        });
+        $.post($form.attr("action"), $form.serialize()).then(function () {});
 
         card.classList.remove('active');
     });
