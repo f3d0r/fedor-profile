@@ -12,15 +12,12 @@ closeBtn.forEach(function (element, index) {
     console.log(element);
     element.addEventListener('click', function (e) {
         e.preventDefault();
+
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function () {
+            alert("Thank you!");
+        });
+
         card.classList.remove('active');
-    });
-});
-
-$(".profile-card-form").submit(function (e) {
-    e.preventDefault();
-
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function () {
-        alert("Thank you!");
     });
 });
