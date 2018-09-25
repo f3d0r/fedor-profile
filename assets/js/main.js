@@ -13,7 +13,7 @@ closeBtn.forEach(function (element, index) {
     element.addEventListener('click', function (e) {
         e.preventDefault();
 
-        var $form = $(this);
+        var $form = $(".profile-card-form");
         $.post($form.attr("action"), $form.serialize()).then(function () {
             alert("Thank you!");
         });
