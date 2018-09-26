@@ -8,8 +8,8 @@ $(document).ready(function () {
 function calculateDecimalYear() {
     var now = Date.now();
     var decimalYears = (now - birthday) / 31556952000;
-    $('#years_old').html(decimalYears.toFixed(3));
+    $('#years_old').html(decimalYears.toFixed(5));
 
     var coffees = 1100 + (3 * (now - coffeeDate) / 88643123.59550563);
-    $('#coffee_num').html(coffees.toFixed(3));
+    $('#coffee_num').html(Math.ceil(coffees.toFixed(3)));
 }
