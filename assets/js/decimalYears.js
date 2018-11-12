@@ -1,4 +1,4 @@
-var birthday = new Date(1997, 11, 12, 6, 15, 0, 0);
+var birthday = new Date(1997, 10, 12, 6, 15, 0, 0);
 var coffeeDate = new Date(2018, 1, 1, 7, 0, 0, 0);
 
 $(document).ready(function () {
