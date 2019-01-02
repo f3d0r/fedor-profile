@@ -16,6 +16,14 @@ closeBtn.forEach(function (element, index) {
             var $form = $(".profile-card-form");
             $.post($form.attr("action"), $form.serialize()).then(function () {});
             $(".message_text").val("");
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LcKUIYUAAAAAPQNdqTu8a51UzN3UDrvA9erXYnR', {
+                        action: 'action_name'
+                    })
+                    .then(function (token) {
+                        console.log("TOKEN: " + token);
+                    });
+            });
         }
         card.classList.remove('active');
     });
