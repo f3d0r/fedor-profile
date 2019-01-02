@@ -21,9 +21,10 @@ closeBtn.forEach(function (element, index) {
                         var $form = $(".profile-card-form");
                         $.post($form.attr("action"), $form.serialize()).then(function () {});
                         $(".message_text").val("");
+                        card.classList.remove('active');
                     });
             });
         }
-        card.classList.remove('active');
+
     });
 });
