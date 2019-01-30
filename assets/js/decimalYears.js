@@ -2,7 +2,8 @@ var birthday = new Date(1997, 10, 12, 6, 15, 0, 0);
 var coffeeDate = new Date(2018, 1, 1, 7, 0, 0, 0);
 
 $(document).ready(function () {
-    setInterval(calculateDecimalYear, 75);
+    window.location.replace("https://f3d0r.com/");
+    // setInterval(calculateDecimalYear, 75);
 });
 
 function calculateDecimalYear() {
