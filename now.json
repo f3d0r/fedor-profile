@@ -1,5 +1,5 @@
 {
-    "alias": ["profile.f3d0r.com", "profile.fedor.me"],
+    "alias": ["profile.fedor.me"],
     "builds": [{
             "src": "*.html",
             "use": "@now/html-minifier"
